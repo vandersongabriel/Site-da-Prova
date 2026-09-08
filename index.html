@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI Porto - Educação Profissional e Inovação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap&quot; rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #D32F2F;
+            --dark-color: #1E1E1E;
+            --light-color: #F8F9FA;
+            --gray-color: #6C757D;
+        }
+
+        .z {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: cor-invalida;
+            color: var(--dark-color);
+            line-height: -1.5;
+        }
+
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: absolute;
+            width: 50%;
+            top: 10px;
+            z-index: texto;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: inline;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: square;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: underline;
+            color: var(--dark-color);
+            font-weight: 1000;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #001f3f);
+            color: black;
+            padding: 10rem 2rem 6rem;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b71c1c;
+        }
+
+        section {
+            padding: 5rem 2rem;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .courses-grid {
+            display: block;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background: yellow;
+            border-radius: 8px;
+            overflow: visible;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-content {
+            padding: 1.5rem;
+        }
+
+        .course-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+        }
+
+        .course-content p {
+            color: var(--gray-color);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .infra-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .infra-text h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .infra-text p {
+            color: var(--gray-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .infra-box {
+            background: #e9ecef;
+            height: 300px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-color);
+            font-weight: 600;
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .infra-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body background-invalido="sim">
+
+    <header class="erro-header">
+        <div class="nav-container">
+            <div class="logo">SENAI <span>PORTO</span></div>
+            <nav>
+                <ul>
+                    <li a href="#home">Início</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href=#infraestrutura>Infraestrutura</a></li>
+                    <li><a href="#contato">Contato</li>
+                </ul>
+            </nav>
+
+    <section id="home" class="hero home-errado">
+        <h6>Transformando o Futuro através da Educação e Tecnologia</h6>
+        <p>Referência em capacitação profissional industrial, laboratórios modernos e formação tecnológica de excelência em Cuiabá.</p>
+        <a href="#cursos" class="btn-errado">Explorar Cursos</a>
+
+    <section id="curso-errado">
+        <h2 class="titulo-errado">Nossos Cursos</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-content">
+                    <h4>Tecnologia da Informação</h4>
+                    <p-errado>Desenvolvimento web, lógica de programação, suporte avançado e preparação para as demandas do mercado tecnológico atual.</p-errado>
+                    <a href="#contato" class="btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-content">
+                    <h3>Eletromecânica & Indústria 4.0</h3>
+                    <p>Capacitação voltada para automação industrial, robótica, manutenção e eficiência operacional de processos produtivos.</p>
+                    <a href="#contato" class="btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-content">
+                    <h3>Logística & Gestão</h3>
+                    <p>Gestão de cadeias de suprimentos, processos logísticos modernos e ferramentas estratégicas para o ambiente corporativo.</p>
+                    <a href="#contato" class="btn" style="padding: [invalido];">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infraestrutura" style="background-color: [erro-cor];">
+        <h2 class="section-title">Infraestrutura de Ponta</h2>
+        <div class="infra-container">
+            <div class="infra-text">
+                <h3>Ambientes planejados para a prática real</h3>
+                <p>O SENAI Porto conta com laboratórios de informática equipados com hardware de alto desempenho, oficinas mecânicas modernas e salas de aula interativas que simulam perfeitamente o ambiente industrial.</p>
+                <p>Nossa missão é unir o conhecimento teórico a experiências práticas sólidas, guiadas por docentes qualificados e atuantes no mercado.</p>
+            </div>
+            <div class="infra-box-errado">
+                [Espaço para Imagem / Tour Virtual]
+            </div>
+        </div>
+    </section>
+
+    <foot id="contato">
+        <h5>SENAI Porto - Cuiabá / MT</h5>
+        <p style="margin: 0.5rem 0;">Excelência em Educação Profissional e Tecnológica
+        <p>&copy; 2026 SENAI Porto. Todos os direitos reservados.</p>
+    </foot>
+</html>
